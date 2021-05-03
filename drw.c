@@ -203,10 +203,13 @@ drw_clr_create(Drw *drw, Clr *dest, const char *clrname)
 	                       DefaultColormap(drw->dpy, drw->screen),
 	                       clrname, dest))
 		die("error, cannot allocate color '%s'", clrname);
+
 }
 
-/* Wrapper to create color schemes. The caller has to call free(3) on the
- * returned color scheme when done using it. */
+/* 
+ * Wrapper to create color schemes. The caller has to call free(3) on the
+ * returned color scheme when done using it. 
+ */
 Clr *
 drw_scm_create(Drw *drw, const char *clrnames[], size_t clrcount)
 {

@@ -1,0 +1,6 @@
+# Ignored files and filetypes
+*.diff
+*.orig
+*.rej
+*.o
+dwm
